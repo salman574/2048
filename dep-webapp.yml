@@ -4,6 +4,7 @@ metadata:
   labels:
     app: 2048-game
   name: 2048-game
+  namespace: 2048
 spec:
   replicas: 3
   selector:
@@ -28,6 +29,7 @@ metadata:
   name: game-service
   labels:
     app: game-service
+  namespace: 2048
 spec:
   ports:
   - name: 2048-game
